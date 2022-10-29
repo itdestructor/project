@@ -1,0 +1,51 @@
+@charset "UTF-8";
+.test {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* НАСЛЕДОВАНИЕ */
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+button {
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
