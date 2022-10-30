@@ -3,6 +3,10 @@
   display: block;
 }
 
+.logo {
+  background-image: url(../img/mask-img.png);
+}
+
 html {
   box-sizing: border-box;
 }
