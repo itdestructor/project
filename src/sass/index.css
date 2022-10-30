@@ -1,8 +1,43 @@
 @charset "UTF-8";
-.test {
-  display: block;
+.logo {
+  text-align: center;
 }
 
+
+.logo_title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.logo_subtitle {
+  font-size: calc(16px + 27.2 * (100vw - 320px) / 1280);
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo_button {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: white;
+  background-color: tomato;
+  padding: 10px 24px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 0 auto;
+}
+.logo_button:hover {
+  background-color: red;
+=======
 @media screen and (max-width: 900px) {
   .question-section {
     padding: 10px 10px;
