@@ -1,10 +1,10 @@
 .question-section{
-    @media screen and(max-width : 996px) {
+    @media screen and(max-width : 900px) {
         padding: 10px 10px;
 
     }
 
-    @media screen and(min-width :997px) {
+    @media screen and(min-width :901px) {
         max-width: 100%;
         padding: 70px 103px 70px 103px;
     }
@@ -18,7 +18,7 @@
         position: relative;
         background: #D8D5D5;
         border-radius: 5px;
-        padding: 3px;
+        padding: 0;
         box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
 }
 .progressbar > span {
@@ -37,13 +37,13 @@
 
 
 .question__flex__wrapper{
-    @media screen and(max-width : 996px) {
+    @media screen and(max-width : 900px) {
         display: block;
         margin: 0 auto;
         text-align: center;
     }
 
-    @media screen and(min-width : 997px) {
+    @media screen and(min-width : 901px) {
         display: flex;
     }
 }
@@ -56,7 +56,7 @@
     background-color: white;
     
 
-    @media screen and(max-width : 996px) {
+    @media screen and(max-width : 900px) {
         max-width: 330px;
         margin: 0 auto;
         margin-bottom: 10px;
@@ -65,13 +65,13 @@
 }
 
 .question__img{
-    @media screen and(max-width : 996px) {
+    @media screen and(max-width : 900px) {
         margin: 0 auto;
     }
 }
 
 .main-question{
-    @media screen and(max-width : 996px) {
+    @media screen and(max-width : 900px) {
         margin: 21px 0 30px 0;
     }
 }
@@ -85,12 +85,11 @@
     border: 1px solid #ff183b;
     color: #ff183b;
 
-    @media screen and(max-width:996px) {
+    @media screen and(max-width:900px) {
         width: 100px;
         height: 30px;
         border-radius: 24px;
         font-size: 16px;
         margin-top: 30px;
-        
     }
 }
