@@ -1,1 +1,54 @@
-
+.logo {
+  background-color: #343434;
+}
+.conteiner {
+  max-width: 420px;
+  margin: 0 auto;
+}
+.logo_tesla {
+  margin: 0 auto;
+}
+.logo_money {
+  position: absolute;
+  top: 0;
+}
+.wrapper {
+  position: relative;
+}
+.logo_color {
+  position: absolute;
+  top: 0;
+  transform: translate(90px, 123px);
+  z-index: 1;
+}
+.logo_circle {
+  position: absolute;
+  top: 0;
+  transform: translate(141px, 195px);
+}
+.logo_circle2 {
+  position: absolute;
+  top: 0;
+  transform: translate(92px, 149px);
+}
+.logo_car {
+  position: absolute;
+  top: 0;
+  transform: translate(227px, 195px);
+}
+.logo_gold-tesla {
+  position: absolute;
+  top: 0;
+  transform: translate(0, 222px);
+}
+.logo_mask {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  transform: translate(82px, 95px);
+}
+.logo_money2 {
+  position: absolute;
+  top: 0;
+  transform: translate(301px, 87px);
+}
