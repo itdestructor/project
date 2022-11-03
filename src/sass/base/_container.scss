@@ -1,11 +1,12 @@
-.container {
+.container__question {
+
+    background-image: radial-gradient(circle at 37.58% 41.31%, #928f86 0, #4d515c 50%, #051b35 100%);
     
-    @media screen and(max-width : 900px) {
-        padding: 0 10px;
+    @media screen and(max-width : 420px) {
     }
 
-    @media screen and(min-width :901px) {
-        max-width: 1250px;
+    @media screen and(min-width :421px) {
+        max-width: 768px;
         width: 100%;
         margin: 0 auto;
         padding: 0 10px;
