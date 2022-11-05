@@ -1,8 +1,13 @@
 .form {
   background-color: #343434;
   height: 100vh;
+  background-image: linear-gradient(350deg, #000000, #000000ad),
+    url(/src/img/teslar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.conteiner {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;

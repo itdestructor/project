@@ -1,98 +1,32 @@
 @charset "UTF-8";
 .logo {
+  height: 100vh;
   background-color: #343434;
   height: 100vh;
+  background-image: linear-gradient(350deg, #000000, rgba(0, 0, 0, 0.6784313725)), url(/src/img/teslar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.conteiner {
-  max-width: 420px;
-  margin: 0 auto;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 420px) {
+  .container {
+    max-width: 420px;
+  }
 }
 
 .logo_tesla {
   margin: 0 auto;
 }
 
-.logo_money {
-  position: absolute;
-  top: 0;
-  transform: translate(0px, 63px);
-}
-
-.wrapper {
-  position: relative;
-}
-
-.logo_color {
-  position: absolute;
-  top: 0;
-  transform: translate(62px, 221px);
-  z-index: 1;
-}
-
-.logo_circle {
-  position: absolute;
-  top: 0;
-  transform: translate(110px, 285px);
-}
-
-.logo_circle2 {
-  position: absolute;
-  top: 0;
-  transform: translate(61px, 238px);
-}
-
-.logo_circle3 {
-  position: absolute;
-  top: 0;
-  transform: translate(68px, 179px);
-}
-
-.logo_car {
-  position: absolute;
-  top: 0;
-  transform: translate(206px, 290px);
-}
-
-.logo_gold-tesla {
-  position: absolute;
-  top: 0;
-  transform: translate(0, 317px);
-}
-
-.logo_mask {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  transform: translate(56px, 159px);
-}
-
-.logo_money2 {
-  position: absolute;
-  top: 0;
-  transform: translate(287px, 137px);
-}
-
-.logo_money3 {
-  position: absolute;
-  top: 0;
-  transform: translate(43px, 303px);
-  z-index: 2;
-}
-
-.logo_money4 {
-  position: absolute;
-  top: 0;
-  transform: translate(334px, 397px);
-}
-
-.logo_money5 {
-  position: absolute;
-  top: 0;
-  transform: translate(0px, 453px);
-}
-
-.logo_title {
+.logo_title2 {
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -100,47 +34,43 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  width: 323px;
-  height: 124px;
-  position: absolute;
-  transform: translate(50px, 484px);
-  top: 0;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 173px;
 }
 
-.logo_span {
+.logo_span2 {
   color: rgb(237, 185, 85);
 }
 
-.logo_text {
-  display: block;
+.logo_text2 {
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.17;
   text-align: center;
   color: #ffffff;
-  position: absolute;
-  top: 0;
-  transform: translate(33px, 661px);
-  width: 338px;
+  margin-top: 30px;
 }
 
-.logo_button {
+.logo_button2 {
   padding: 20px 60px;
-  background: linear-gradient(92.27deg, #f7cea9 0%, #edb955 100%);
-  box-shadow: 0px 0px 41.6949px rgba(239, 189, 98, 0.35);
+  background: linear-gradient(92.27deg, #c5864e 0%, #460b0b 100%);
+  box-shadow: 0 0 41.6949px rgba(157, 0, 0, 0.4784313725);
   border-radius: 6.94915px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 25px;
   line-height: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  display: block;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #5e3c2f;
-  position: absolute;
-  top: 0;
-  transform: translate(48px, 745px);
+  color: #ffffff;
   border: none;
 }
 
@@ -256,9 +186,13 @@
 .form {
   background-color: #343434;
   height: 100vh;
+  background-image: linear-gradient(350deg, #000000, rgba(0, 0, 0, 0.6784313725)), url(/src/img/teslar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.conteiner {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -266,7 +200,7 @@
   padding-right: 15px;
 }
 @media screen and (min-width: 420px) {
-  .conteiner {
+  .container {
     max-width: 420px;
   }
 }
