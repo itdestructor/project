@@ -1,7 +1,5 @@
 @charset "UTF-8";
 .logo {
-  padding-bottom: 33%;
-  padding-top: 10%;
   background-color: #343434;
   background-image: linear-gradient(350deg, #000000, rgba(0, 0, 0, 0.6784313725)), url(/src/img/teslar.jpg);
   background-repeat: no-repeat;
@@ -10,6 +8,11 @@
 }
 
 .container {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -19,6 +22,16 @@
 @media screen and (min-width: 420px) {
   .container {
     max-width: 420px;
+  }
+}
+@media screen and (min-width: 819px) {
+  .container {
+    max-width: 819px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 100%;
   }
 }
 
@@ -31,13 +44,18 @@
   text-transform: uppercase;
   color: #fff;
   max-width: 323px;
-  margin-top: 155px;
   margin-left: auto;
   margin-right: auto;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.19;
+}
+@media screen and (min-width: 819px) {
+  .logo_title2 {
+    font-size: 36px;
+    max-width: 427px;
+  }
 }
 
 .logo_span2 {
@@ -56,6 +74,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 819px) {
+  .logo_text2 {
+    font-size: 30px;
+    max-width: 395px;
+  }
+}
 
 .logo_button2 {
   padding: 20px 60px;
@@ -68,7 +92,6 @@
   line-height: 1;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 137px;
   display: block;
   text-align: center;
   letter-spacing: 0.05em;
@@ -193,19 +216,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 420px) {
-  .container {
-    max-width: 420px;
-  }
 }
 
 .form_title {
