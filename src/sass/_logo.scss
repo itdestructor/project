@@ -1,6 +1,4 @@
 .logo {
-  // padding-bottom: 33%;
-  // padding-top: 10%;
   background-color: #343434;
   background-image: linear-gradient(350deg, #000000, #000000ad),
     url(/src/img/teslar.jpg);
@@ -27,127 +25,13 @@
     max-width: 819px;
   }
   @media screen and(min-width:1200px) {
-    max-width: 100%;
+    max-width: 1200px;
+    display: block;
   }
 }
 .logo_tesla {
   margin: 0 auto;
 }
-// .logo_money {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(0px, 63px);
-// }
-// .wrapper {
-//   position: relative;
-// }
-// .logo_color {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(62px, 221px);
-//   z-index: 1;
-// }
-// .logo_circle {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(110px, 285px);
-// }
-// .logo_circle2 {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(61px, 238px);
-// }
-// .logo_circle3 {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(68px, 179px);
-// }
-// .logo_car {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(206px, 290px);
-// }
-// .logo_gold-tesla {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(0, 317px);
-// }
-// .logo_mask {
-//   position: absolute;
-//   top: 0;
-//   z-index: 2;
-//   transform: translate(56px, 159px);
-// }
-// .logo_money2 {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(287px, 137px);
-// }
-// .logo_money3 {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(43px, 303px);
-//   z-index: 2;
-// }
-// .logo_money4 {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(334px, 397px);
-// }
-// .logo_money5 {
-//   position: absolute;
-//   top: 0;
-//   transform: translate(0px, 453px);
-// }
-// .logo_title {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   text-align: center;
-//   text-transform: uppercase;
-//   color: #ffffff;
-//   max-width: 323px;
-//   position: absolute;
-//   transform: translate(50px, 484px);
-//   top: 0;
-// }
-// .logo_span {
-//   color: rgba(237, 185, 85, 1);
-// }
-// .logo_text {
-//   display: block;
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 17px;
-//   line-height: 1.17;
-//   text-align: center;
-//   color: #ffffff;
-//   position: absolute;
-//   top: 0;
-//   transform: translate(33px, 661px);
-//   max-width: 338px;
-// }
-// .logo_button {
-//   padding: 20px 60px;
-//   background: linear-gradient(92.27deg, #f7cea9 0%, #edb955 100%);
-//   box-shadow: 0px 0px 41.6949px rgba(239, 189, 98, 0.35);
-//   border-radius: 6.94915px;
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 25px;
-//   line-height: 1;
-
-//   text-align: center;
-//   letter-spacing: 0.05em;
-//   text-transform: uppercase;
-
-//   color: #5e3c2f;
-//   position: absolute;
-//   top: 0;
-//   transform: translate(48px, 745px);
-//   border: none;
-// }
 .logo_title2 {
   text-align: center;
   text-transform: uppercase;
@@ -164,6 +48,14 @@
     font-size: 36px;
     max-width: 427px;
   }
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    max-width: 323px;
+    margin-right: 0px;
+  }
+}
+.wrapper-text {
+  margin-top: 70px;
 }
 .logo_span2 {
   color: rgba(237, 185, 85, 1);
@@ -182,6 +74,12 @@
   @media screen and(min-width:819px) {
     font-size: 30px;
     max-width: 395px;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 20px;
+    max-width: 360px;
+    margin-right: 0px;
+    margin-top: 35px;
   }
 }
 .logo_button2 {
@@ -202,4 +100,8 @@
   text-transform: uppercase;
   color: #ffffff;
   border: none;
+  @media screen and(min-width:1200px) {
+    margin-right: 0px;
+    margin-top: 50px;
+  }
 }

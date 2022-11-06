@@ -31,7 +31,8 @@
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 100%;
+    max-width: 1200px;
+    display: block;
   }
 }
 
@@ -57,6 +58,17 @@
     max-width: 427px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .logo_title2 {
+    font-size: 26px;
+    max-width: 323px;
+    margin-right: 0px;
+  }
+}
+
+.wrapper-text {
+  margin-top: 70px;
+}
 
 .logo_span2 {
   color: rgb(237, 185, 85);
@@ -80,6 +92,14 @@
     max-width: 395px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .logo_text2 {
+    font-size: 20px;
+    max-width: 360px;
+    margin-right: 0px;
+    margin-top: 35px;
+  }
+}
 
 .logo_button2 {
   padding: 20px 60px;
@@ -98,6 +118,12 @@
   text-transform: uppercase;
   color: #ffffff;
   border: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo_button2 {
+    margin-right: 0px;
+    margin-top: 50px;
+  }
 }
 
 .question__section {
