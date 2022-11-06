@@ -166,6 +166,14 @@
     font-size: 25px;
   }
 }
+@media screen and (min-width: 800px) {
+  .question__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+  }
+}
 
 .question__text {
   display: block;
@@ -211,6 +219,16 @@
     margin-bottom: 40px;
   }
 }
+@media screen and (min-width: 800px) {
+  .question__button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
 
 .question__golden__accent {
   color: #EDB955;
@@ -228,6 +246,13 @@
   .progress__bar {
     height: 40px;
     padding: 3px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .progress__bar {
+    height: 40px;
+    padding: 3px;
+    margin-bottom: 30px;
   }
 }
 
@@ -262,6 +287,38 @@
 @media screen and (min-width: 421px) {
   .question__img {
     -webkit-box-shadow: 20px 6px 500px 136px rgba(0, 0, 0, 0.75);
+  }
+}
+@media screen and (min-width: 800px) {
+  .question__img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .question__img__desktop {
+    width: 430px;
+    height: 300px;
+    -webkit-box-shadow: 20px 6px 500px 1px rgba(0, 0, 0, 0.7490196078);
+    filter: blur(1.1);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .question__delimeter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -331,6 +388,36 @@
     height: 40px;
     border-radius: 5px;
   }
+}
+
+@media screen and (max-width: 420px) {
+  .question__svg {
+    margin-right: 7px;
+  }
+}
+@media screen and (min-width: 421px) {
+  .question__svg {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .question__svg {
+    margin-right: 15px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form {
