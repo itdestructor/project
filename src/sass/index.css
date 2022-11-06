@@ -147,6 +147,15 @@
 .question__section {
   color: #FFFFFF;
 }
+@media screen and (min-width: 800px) {
+  .question__section {
+    background-image: url("/src/img/tesla.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+  }
+}
 
 .question__title {
   display: block;
@@ -322,6 +331,12 @@
   }
 }
 
+@media screen and (min-width: 800px) {
+  .question__button__block {
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .questions__count__blocks {
     display: flex;
@@ -389,6 +404,16 @@
     border-radius: 5px;
   }
 }
+@media screen and (min-width: 800px) {
+  .back__button {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 21px;
+  }
+}
 
 @media screen and (max-width: 420px) {
   .question__svg {
@@ -418,6 +443,10 @@
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.question__top__logo {
+  margin: 0 auto;
 }
 
 .form {
@@ -574,7 +603,17 @@ body {
     padding-bottom: 30%;
   }
 }
+@media screen and (min-width: 800px) {
+  .container__question {
+    width: 100%;
+    padding: 0;
+  }
+}
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.tap-anime {
+  transform: scale(1.2);
 }/*# sourceMappingURL=index.css.map */

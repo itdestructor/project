@@ -1,5 +1,13 @@
 .question__section{
     color: #FFFFFF;
+    @media screen and(min-width :800px){
+      background-image: url('/src/img/tesla.jpg');
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+  
+  }
 }
 
 .question__title{
@@ -77,6 +85,8 @@
 .question__golden__accent{
     color:#EDB955;
 }
+
+
 
 .progress__bar{
     height: 30px;
@@ -164,6 +174,12 @@
     }
   }
 
+  .question__button__block{
+    @media screen and(min-width:800px){
+      margin-right: auto;
+    }
+  }
+
 
   .questions__count__blocks{
 
@@ -230,6 +246,16 @@
   
           }
 
+          @media screen and(min-width : 800px) {
+            margin-left: 30px;
+            margin-bottom: 30px;
+            width: 150px;
+            height: 60px;
+            border-radius: 5px;
+            font-size: 21px;
+    
+            }
+
   }
   .question__svg{
     @media screen and(max-width : 420px){
@@ -243,6 +269,8 @@
     }
   }
 
+  
+
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -255,6 +283,10 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .question__top__logo{
+    margin: 0 auto;
   }
 
 
