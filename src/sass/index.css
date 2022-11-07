@@ -7,7 +7,7 @@
   background-size: cover;
 }
 
-.container {
+.logo_container {
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -20,17 +20,17 @@
   padding-right: 15px;
 }
 @media screen and (min-width: 420px) {
-  .container {
+  .logo_container {
     max-width: 420px;
   }
 }
 @media screen and (min-width: 819px) {
-  .container {
+  .logo_container {
     max-width: 819px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .logo_container {
     max-width: 1200px;
     display: block;
   }
@@ -433,11 +433,38 @@
 
 .form {
   background-color: #343434;
-  height: 100vh;
   background-image: linear-gradient(350deg, #000000, rgba(0, 0, 0, 0.6784313725)), url(/src/img/teslar.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.container {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 420px) {
+  .container {
+    max-width: 420px;
+  }
+}
+@media screen and (min-width: 819px) {
+  .container {
+    max-width: 819px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .form_title {
@@ -450,8 +477,21 @@
   color: #ffffff;
   max-width: 293px;
   margin: 0 auto;
-  margin-top: 30px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 819px) {
+  .form_title {
+    max-width: 373px;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form_title {
+    font-size: 26px;
+    max-width: 293px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
 }
 
 .form_text {
@@ -466,9 +506,26 @@
   margin-bottom: 30px;
   max-width: 346px;
 }
+@media screen and (min-width: 819px) {
+  .form_text {
+    max-width: 400px;
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form_text {
+    font-size: 17px;
+    max-width: 346px;
+  }
+}
 
 .form_modal {
   margin: 0 auto;
+}
+@media screen and (min-width: 819px) {
+  .form_modal {
+    max-width: 420px;
+  }
 }
 
 .form_iput {
@@ -488,6 +545,16 @@
   font-weight: normal;
   background: none;
   border-bottom: 2px solid rgb(237, 185, 85);
+}
+@media screen and (min-width: 819px) {
+  .form_iput {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form_iput {
+    font-size: 16px;
+  }
 }
 
 .form_button {
