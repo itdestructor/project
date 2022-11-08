@@ -79,48 +79,48 @@ let infoObject = {
 
 window.addEventListener('click',(event) => {
     if(globalCount === 0){
-        firstQuestionContent.innerText = infoObject.first.questions.firstQuestion
-        secondQuestionContent.innerText = infoObject.first.questions.secondQuestion
-        thirdQuestionContent.innerText = infoObject.first.questions.thirdQuestion
+        firstQuestionContent.textContent = infoObject.first.questions.firstQuestion
+        secondQuestionContent.textContent = infoObject.first.questions.secondQuestion
+        thirdQuestionContent.textContent = infoObject.first.questions.thirdQuestion
 
         dynamicSpan.style.width = infoObject.first.progressBar
-        questionTitleCounter.innerText = infoObject.first.handler
+        questionTitleCounter.textContent = infoObject.first.handler
         questionTitleText.textContent = infoObject.first.questionTitle
 
         bottomQuestionCounter.textContent = infoObject.first.handler
     }
 
     if(globalCount === 1){
-        firstQuestionContent.innerText = infoObject.second.questions.firstQuestion
-        secondQuestionContent.innerText = infoObject.second.questions.secondQuestion
-        thirdQuestionContent.innerText = infoObject.second.questions.thirdQuestion
+        firstQuestionContent.textContent = infoObject.second.questions.firstQuestion
+        secondQuestionContent.textContent = infoObject.second.questions.secondQuestion
+        thirdQuestionContent.textContent = infoObject.second.questions.thirdQuestion
 
         dynamicSpan.style.width = infoObject.second.progressBar
-        questionTitleCounter.innerText = infoObject.second.handler
+        questionTitleCounter.textContent = infoObject.second.handler
         questionTitleText.textContent = infoObject.second.questionTitle
 
         bottomQuestionCounter.textContent = infoObject.second.handler
     }
 
     if(globalCount === 2){
-        firstQuestionContent.innerText = infoObject.third.questions.firstQuestion
-        secondQuestionContent.innerText = infoObject.third.questions.secondQuestion
-        thirdQuestionContent.innerText = infoObject.second.questions.thirdQuestion
+        firstQuestionContent.textContent = infoObject.third.questions.firstQuestion
+        secondQuestionContent.textContent = infoObject.third.questions.secondQuestion
+        thirdQuestionContent.textContent = infoObject.second.questions.thirdQuestion
 
         dynamicSpan.style.width = infoObject.third.progressBar
-        questionTitleCounter.innerText = infoObject.third.handler
+        questionTitleCounter.textContent = infoObject.third.handler
         questionTitleText.textContent = infoObject.third.questionTitle
 
         bottomQuestionCounter.textContent = infoObject.third.handler
     }
 
     if(globalCount === 3){
-        firstQuestionContent.innerText = infoObject.last.questions.firstQuestion
+        firstQuestionContent.textContent = infoObject.last.questions.firstQuestion
         secondQuestionArea.classList.add('visually-hidden')
         thirdQuestionArea.classList.add('visually-hidden')
 
         dynamicSpan.style.width = infoObject.last.progressBar
-        questionTitleCounter.innerText = infoObject.last.handler
+        questionTitleCounter.textContent = infoObject.last.handler
         questionTitleText.textContent = infoObject.last.questionTitle
 
         bottomQuestionCounter.textContent = infoObject.last.handler
@@ -149,18 +149,10 @@ backButton.addEventListener('click',(event) =>{
 logoButton.addEventListener('click',(event) => {
     sectionLogo.classList.add('visually-hidden')
     questionSection.classList.remove('visually-hidden')
-    questionSection.style.paddingBottom = '40%'
 })
 
 
-document.addEventListener('scroll',(event) => {
-    if(globalCount == 4){
-        questionSection.style.paddingBottom = '40%'
-    } else {
-    questionSection.style.paddingBottom = '0'
-    console.log(event)
-}
-})
+
 
 
 
