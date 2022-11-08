@@ -1,13 +1,12 @@
 .logo {
   background-color: #343434;
-  background-image: linear-gradient(350deg, #000000, #000000ad),
-    url(/src/img/teslar.jpg);
+  background-image: url(/src/img/ilon.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
-.container {
+.logo_container {
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -104,4 +103,58 @@
     margin-right: 0px;
     margin-top: 50px;
   }
+}
+.logo_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+}
+.logo_span {
+  color: rgba(237, 185, 85, 1);
+}
+.logo_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+.logo_container2 {
+  max-width: 420px;
+  padding-top: 560px;
+  padding-bottom: 30px;
+  height: 100%;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.logo_button {
+  padding: 19px 60px;
+  display: block;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: rgba(237, 185, 85, 1);
+  box-shadow: 0px 0px 41.6949px rgba(239, 189, 98, 0.35);
+  border-radius: 7px;
 }
