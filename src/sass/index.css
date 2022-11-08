@@ -697,9 +697,8 @@ body {
 }
 @media screen and (max-width: 420px) {
   .container__question {
-    padding-top: 15px;
     margin: 0 auto;
-    padding-bottom: 50%;
+    padding-bottom: 25%;
   }
 }
 @media screen and (min-width: 421px) {

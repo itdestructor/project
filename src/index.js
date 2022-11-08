@@ -30,8 +30,6 @@ let sectionForm = document.getElementById('section-form')
 
 
 
-
-
 questionHandler.addEventListener('click',(event) => {
 event.preventDefault()
 
@@ -151,4 +149,22 @@ backButton.addEventListener('click',(event) =>{
 logoButton.addEventListener('click',(event) => {
     sectionLogo.classList.add('visually-hidden')
     questionSection.classList.remove('visually-hidden')
+    questionSection.style.paddingBottom = '40%'
 })
+
+
+document.addEventListener('scroll',(event) => {
+    if(globalCount == 4){
+        questionSection.style.paddingBottom = '40%'
+    } else {
+    questionSection.style.paddingBottom = '0'
+    console.log(event)
+}
+})
+
+
+
+
+
+
+
