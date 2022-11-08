@@ -21,7 +21,13 @@ let bottomQuestionCounter = document.getElementById('question__golden__accent')
 let backButton = document.getElementById('back__button')
 
 let questionSection = document.getElementById('question__section')
-console.log(questionSection)
+
+
+let sectionLogo = document.getElementById('section-logo')
+let logoButton = document.getElementById('logo_button')
+
+let sectionForm = document.getElementById('section-form')
+
 
 
 
@@ -124,6 +130,7 @@ window.addEventListener('click',(event) => {
 
     if(globalCount === 4){
         questionSection.classList.add('visually-hidden')
+        sectionForm.classList.remove('visually-hidden')
     }
 })
 
@@ -140,3 +147,8 @@ backButton.addEventListener('click',(event) =>{
     }
 })
 
+
+logoButton.addEventListener('click',(event) => {
+    sectionLogo.classList.add('visually-hidden')
+    questionSection.classList.remove('visually-hidden')
+})
