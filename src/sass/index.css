@@ -6,6 +6,11 @@
   background-position: center;
   background-size: auto 100%;
 }
+@media screen and (min-width: 420px) {
+  .logo {
+    background-image: linear-gradient(350deg, #000000, rgba(0, 0, 0, 0.6784313725)), url(/src/img/teslar.jpg);
+  }
+}
 
 .logo_container {
   height: 100%;
@@ -18,10 +23,12 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  display: none;
 }
 @media screen and (min-width: 420px) {
   .logo_container {
     max-width: 420px;
+    display: flex;
   }
 }
 @media screen and (min-width: 819px) {
@@ -38,6 +45,12 @@
 
 .logo_tesla {
   margin: 0 auto;
+  display: none;
+}
+@media screen and (min-width: 420px) {
+  .logo_tesla {
+    display: block;
+  }
 }
 
 .logo_title2 {
@@ -68,6 +81,12 @@
 
 .wrapper-text {
   margin-top: 70px;
+  display: none;
+}
+@media screen and (min-width: 420px) {
+  .wrapper-text {
+    display: block;
+  }
 }
 
 .logo_span2 {
@@ -85,6 +104,12 @@
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+  display: none;
+}
+@media screen and (min-width: 420px) {
+  .logo_text2 {
+    display: block;
+  }
 }
 @media screen and (min-width: 819px) {
   .logo_text2 {
@@ -118,6 +143,12 @@
   text-transform: uppercase;
   color: #ffffff;
   border: none;
+  display: none;
+}
+@media screen and (min-width: 420px) {
+  .logo_button2 {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo_button2 {
@@ -158,8 +189,6 @@
 
 .logo_container2 {
   max-width: 420px;
-  padding-top: 560px;
-  padding-bottom: 30px;
   height: 100%;
   min-height: 100vh;
   margin-left: auto;
@@ -167,6 +196,15 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 75px;
+}
+@media screen and (min-width: 420px) {
+  .logo_container2 {
+    display: none;
+  }
 }
 
 .logo_button {
