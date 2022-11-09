@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .logo {
-  background-color: #343434;
+  background-color: #051724;
   background-image: url(/src/img/ilon.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -9,6 +9,8 @@
 @media screen and (min-width: 420px) {
   .logo {
     background-image: linear-gradient(350deg, #000000, rgba(0, 0, 0, 0.6784313725)), url(/src/img/teslar.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -65,12 +67,6 @@
   font-weight: 400;
   line-height: 1.19;
 }
-@media screen and (min-width: 819px) {
-  .logo_title2 {
-    font-size: 36px;
-    max-width: 427px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo_title2 {
     font-size: 26px;
@@ -97,6 +93,7 @@
   text-align: center;
   color: #fff;
   margin-top: 55px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -109,12 +106,6 @@
 @media screen and (min-width: 420px) {
   .logo_text2 {
     display: block;
-  }
-}
-@media screen and (min-width: 819px) {
-  .logo_text2 {
-    font-size: 30px;
-    max-width: 395px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -185,6 +176,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+  max-width: 300px;
 }
 
 .logo_container2 {
