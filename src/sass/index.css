@@ -536,7 +536,7 @@
 @media screen and (max-width: 420px) {
   .back__button {
     margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 15px;
     width: 90px;
     height: 30px;
     border-radius: 5px;
@@ -579,17 +579,7 @@
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  display: none;
 }
 
 .question__top__logo {
