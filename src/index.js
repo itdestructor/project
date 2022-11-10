@@ -170,7 +170,57 @@ logoButton2.addEventListener('click', event => {
   questionSection.classList.remove('visually-hidden');
 });
 
+  if (globalCount === 2) {
+    firstQuestionContent.textContent = infoObject.third.questions.firstQuestion;
+    secondQuestionContent.textContent =
+      infoObject.third.questions.secondQuestion;
+    thirdQuestionContent.textContent =
+      infoObject.second.questions.thirdQuestion;
 
+    dynamicSpan.style.width = infoObject.third.progressBar;
+    questionTitleCounter.textContent = infoObject.third.handler;
+    questionTitleText.textContent = infoObject.third.questionTitle;
 
+    bottomQuestionCounter.textContent = infoObject.third.handler;
+  }
 
+  if (globalCount === 3) {
+    firstQuestionContent.textContent = infoObject.last.questions.firstQuestion;
+    secondQuestionArea.classList.add('visually-hidden');
+    thirdQuestionArea.classList.add('visually-hidden');
 
+    dynamicSpan.style.width = infoObject.last.progressBar;
+    questionTitleCounter.textContent = infoObject.last.handler;
+    questionTitleText.textContent = infoObject.last.questionTitle;
+    bottomQuestionCounter.textContent = infoObject.last.handler;
+  }
+
+  if (globalCount === 4) {
+    questionSection.classList.add('visually-hidden');
+    sectionForm.classList.remove('visually-hidden');
+  };
+
+backButton.addEventListener('click', event => {
+  if (globalCount > 0) {
+    globalCount--;
+  } else {
+    return;
+  }
+
+  if (
+    globalCount < 4 &&
+    secondQuestionArea.classList.contains('visually-hidden')
+  ) {
+    secondQuestionArea.classList.remove('visually-hidden');
+    thirdQuestionArea.classList.remove('visually-hidden');
+  }
+});
+
+logoButton.addEventListener('click', event => {
+  sectionLogo.classList.add('visually-hidden');
+  questionSection.classList.remove('visually-hidden');
+});
+logoButton2.addEventListener('click', event => {
+  sectionLogo.classList.add('visually-hidden');
+  questionSection.classList.remove('visually-hidden');
+});
