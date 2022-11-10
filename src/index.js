@@ -28,6 +28,8 @@ let logoButton = document.getElementById('logo_button')
 
 let sectionForm = document.getElementById('section-form')
 
+let sectionPadding = document.getElementById('section__padding')
+
 
 
 questionHandler.addEventListener('click',(event) => {
