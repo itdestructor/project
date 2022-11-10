@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import '/node_modules/modern-normalize/modern-normalize.css';
+body, html {
+  min-height: 100vh;
+}
 .logo {
   background-color: #051724;
   background-image: url(/src/img/ilon.jpg);

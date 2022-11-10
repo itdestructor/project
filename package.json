@@ -25,6 +25,8 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
+    "inputmask": "^5.0.7",
+    "intl-tel-input": "^17.0.19",
     "modern-normalize": "^1.1.0"
   }
 }

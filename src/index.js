@@ -1,3 +1,30 @@
+import intlTelInput from 'intl-tel-input';
+import Inputmask from "inputmask";
+
+const inputPhone = document.querySelector("#form_phone");
+let phoneNumber = intlTelInput(inputPhone, {
+  initialCountry: "ru",
+  separateDialCode: true,
+  // preferredCountries: ["by", "ru", "kz"],
+  onlyCountries: ["by", "ru", "kz"],
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"
+});
+// $(this).on("countrychange", function (e, countryData) {
+//   $(this).val('');
+//   $(this).mask($("#phone").attr('placeholder').replace(/[0-9]/g, 0));
+//   $(this).removeAttr('maxlength');
+// });
+
+inputPhone.addEventListener("countrychange", function (e, countryData) {
+  this.value = ''
+  Inputmask(this.getAttribute('placeholder').replace(/[0-9]/g, 9)).mask(this);
+  this.removeAttribute('maxlength');
+});
+Inputmask("999 999 99 99").mask(inputPhone); //ru
+//$(this).mask("00 000 0000"); //UA
+
+
+
 let questionHandler = document.querySelector('.question__main__group'); //Див на который я делегировал события
 
 let globalCount = 0; //Глобальный счетчик
@@ -7,6 +34,8 @@ let dynamicSpan = document.getElementById('dynamic__span'); //Динамичес
 let questionTitleCounter = document.querySelector('.question__title__counter'); //Счетчик вопросов
 
 let questionTitleText = document.getElementById('question_title_text'); //Заголовок вопросов
+
+let submitForm = document.getElementById('submit_form'); //Форма обратной связи
 
 let firstQuestionContent = document.getElementById('first_button'); //Кнопки с вопросами
 let secondQuestionContent = document.getElementById('second_button');
@@ -173,3 +202,14 @@ logoButton2.addEventListener('click', event => {
   sectionLogo.classList.add('visually-hidden');
   questionSection.classList.remove('visually-hidden');
 });
+
+submitForm.addEventListener('submit', e => {
+  e.preventDefault()
+
+  let name = document.getElementById('form_name').value
+  let email = document.getElementById('form_email').value
+  // let phone = document.getElementById('form_phone').value
+  let phone = phoneNumber.getNumber()
+
+  console.log(name, email, phone)
+})
