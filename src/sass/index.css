@@ -4,7 +4,7 @@
   background-image: url(/src/img/ilon.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 @media screen and (min-width: 420px) {
   .logo {
@@ -40,6 +40,7 @@
 }
 @media screen and (min-width: 1200px) {
   .logo_container {
+    padding-top: 130px;
     max-width: 1200px;
     display: block;
   }
@@ -76,7 +77,6 @@
 }
 
 .wrapper-text {
-  margin-top: 70px;
   display: none;
 }
 @media screen and (min-width: 420px) {
