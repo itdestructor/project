@@ -27,6 +27,9 @@ let logoButton2 = document.getElementById('logo_button2');
 
 let sectionForm = document.getElementById('section-form');
 
+let questionImg = document.getElementById('question__img__mob')
+console.log(questionImg)
+
 questionHandler.addEventListener('click', event => {
   event.preventDefault();
 
