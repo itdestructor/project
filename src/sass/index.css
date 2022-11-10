@@ -187,7 +187,7 @@
   .logo_text {
     text-align: center;
     color: #fff;
-    max-width: 300px;
+    max-width: 225px;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -283,7 +283,7 @@
 }
 
 .question__section {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (min-width: 800px) {
   .question__section {
@@ -292,6 +292,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -344,7 +347,7 @@
 .question__button {
   border: 1px solid gold;
   border-radius: 5px;
-  background: linear-gradient(92.27deg, #F7CEA9 0%, #EDB955 100%);
+  background: linear-gradient(92.27deg, #f7cea9 0%, #edb955 100%);
   display: flex;
   box-shadow: 10px 10px 20px black;
   transition: all 1s linear;
@@ -384,7 +387,7 @@
 }
 
 .question__golden__accent {
-  color: #EDB955;
+  color: #edb955;
 }
 
 .progress__bar {
@@ -412,7 +415,7 @@
 .progress__bar > span {
   display: block;
   height: 100%;
-  background: linear-gradient(92.27deg, #F7CEA9 0%, #EDB955 100%);
+  background: linear-gradient(92.27deg, #f7cea9 0%, #edb955 100%);
   box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
@@ -509,7 +512,7 @@
 }
 
 .question__count__item {
-  background: linear-gradient(92.27deg, #F7CEA9 0%, #EDB955 100%);
+  background: linear-gradient(92.27deg, #f7cea9 0%, #edb955 100%);
   border-radius: 50%;
 }
 @media screen and (max-width: 420px) {
@@ -795,13 +798,16 @@ body {
 @media screen and (max-width: 420px) {
   .container__question {
     margin: 0 auto;
-    padding-bottom: 25%;
+    height: 100%;
+    min-height: 100vh;
   }
 }
 @media screen and (min-width: 421px) {
   .container__question {
     width: 100%;
-    padding-bottom: 30%;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100vh;
   }
 }
 @media screen and (min-width: 800px) {
