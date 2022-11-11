@@ -67,6 +67,9 @@ let sectionForm = document.getElementById('section-form');
 let questionImg = document.getElementById('question__img__mob')
 console.log(questionImg)
 
+let imgArray = ['/src/img/bitkoinMask.jpg','/src/img/teslaMoney.jpg','/src/img/maskImg.jpg'] // ПУти к картинкам
+
+
 questionHandler.addEventListener('click', event => {
   event.preventDefault();
 
@@ -136,6 +139,8 @@ window.addEventListener('click', event => {
     questionTitleText.textContent = infoObject.first.questionTitle;
 
     bottomQuestionCounter.textContent = infoObject.first.handler;
+
+    
   }
 
   if (globalCount === 1) {
@@ -151,6 +156,8 @@ window.addEventListener('click', event => {
     questionTitleText.textContent = infoObject.second.questionTitle;
 
     bottomQuestionCounter.textContent = infoObject.second.handler;
+
+    questionImg.src = imgArray[0]
   }
 
   if (globalCount === 2) {
