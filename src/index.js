@@ -1,6 +1,14 @@
 import intlTelInput from 'intl-tel-input';
 import Inputmask from "inputmask";
 
+const appHeight = () => {
+  const doc = document.documentElement
+  doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+  console.log(doc)
+}
+window.addEventListener('resize', appHeight)
+appHeight()
+
 const inputPhone = document.querySelector("#form_phone");
 let phoneNumber = intlTelInput(inputPhone, {
   initialCountry: "ru",
@@ -215,9 +223,3 @@ submitForm.addEventListener('submit', e => {
 })
 
 
-const appHeight = () => {
-  const doc = document.documentElement
-  doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-}
-window.addEventListener('resize', appHeight)
-appHeight()
