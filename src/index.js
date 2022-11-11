@@ -211,15 +211,5 @@ logoButton2.addEventListener('click', event => {
   questionSection.classList.remove('visually-hidden');
 });
 
-submitForm.addEventListener('submit', e => {
-  e.preventDefault()
-
-  let name = document.getElementById('form_name').value
-  let email = document.getElementById('form_email').value
-  // let phone = document.getElementById('form_phone').value
-  let phone = phoneNumber.getNumber()
-
-  console.log(name, email, phone)
-})
 
 
