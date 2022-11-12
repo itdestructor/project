@@ -27,6 +27,7 @@
   "dependencies": {
     "inputmask": "^5.0.7",
     "intl-tel-input": "^17.0.19",
+    "js-cookie": "^3.0.1",
     "modern-normalize": "^1.1.0"
   }
 }

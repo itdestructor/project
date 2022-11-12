@@ -133,6 +133,7 @@
 }
 
 .question__img {
+  width: 100%;
   @media screen and(max-width : 420px) {
     -webkit-box-shadow: 10px 3px 297px 68px rgb(0 0 0 / 75%);
     margin-top: 15px;

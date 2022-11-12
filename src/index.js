@@ -1,5 +1,9 @@
 import intlTelInput from 'intl-tel-input';
 import Inputmask from "inputmask";
+import bitcoin from './img/bitkoinMask.jpg'
+import teslaMoney from './img/teslaMoney.jpg'
+import maskImg from './img/maskImg.jpg'
+import teslaJpg from './img/tesla.jpg'
 
 const appHeight = () => {
   const doc = document.documentElement
@@ -66,6 +70,9 @@ let sectionForm = document.getElementById('section-form');
 
 let questionImg = document.getElementById('question__img__mob')
 console.log(questionImg)
+
+let imgArray = [teslaJpg,bitcoin,teslaMoney,maskImg] // ПУти к картинкам
+
 
 questionHandler.addEventListener('click', event => {
   event.preventDefault();
@@ -136,6 +143,8 @@ window.addEventListener('click', event => {
     questionTitleText.textContent = infoObject.first.questionTitle;
 
     bottomQuestionCounter.textContent = infoObject.first.handler;
+    
+    questionImg.setAttribute('src',imgArray[0])
   }
 
   if (globalCount === 1) {
@@ -151,6 +160,8 @@ window.addEventListener('click', event => {
     questionTitleText.textContent = infoObject.second.questionTitle;
 
     bottomQuestionCounter.textContent = infoObject.second.handler;
+
+    questionImg.setAttribute('src',imgArray[1])
   }
 
   if (globalCount === 2) {
@@ -165,6 +176,7 @@ window.addEventListener('click', event => {
     questionTitleText.textContent = infoObject.third.questionTitle;
 
     bottomQuestionCounter.textContent = infoObject.third.handler;
+    questionImg.setAttribute('src',imgArray[2])
   }
 
   if (globalCount === 3) {
@@ -177,6 +189,7 @@ window.addEventListener('click', event => {
     questionTitleText.textContent = infoObject.last.questionTitle;
 
     bottomQuestionCounter.textContent = infoObject.last.handler;
+    questionImg.setAttribute('src',imgArray[3])
   }
 
   if (globalCount === 4) {

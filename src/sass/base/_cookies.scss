@@ -1,0 +1,20 @@
+.cookie__alert{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 0.2s ease;
+}
+
+.is__show{
+    transform: translateY(0);
+    transition: transform 0.2s ease;
+}
+
+.cookie__container{
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
